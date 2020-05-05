@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgba(2, 2, 61, 0.6);
+    padding-bottom: 15px;
+}
+#qtnNumRecorder {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+}
+.qtnNum {
+    margin-left: 10px;
+}
+.container {
+    background-color: white;
+    width: 80%;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    padding: 10px;
+    border-radius: 15px;
+   text-align: center;
+}
+.questionText {
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+    margin: 10px;
+}
+#answerBtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Btn {
+    background-color: rgba(2, 2, 61, 0.6);
+    color: black;
+    font-weight: bolder;
+    font-size: 1.2em;
+    width: 45%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Btn.correct {
+    background-color: green;
+    color: white;
+}
+.Btn.wrong {
+    background-color: red;
+    color: white;
+}
+.contrl {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin-left: 33%;
+    margin-top: 10px;
+    background-color: rgba(2, 2, 61, 0.6);
+    color: black;
+    font-weight: bolder;
+    font-size: 1.5em;
+    width: 35%;
+    border-radius: 10px;
+    padding: 20px;
+}
+.quitGame {
+    background-color: rgba(2, 2, 61, 0.2);
+    color: red;
+    border-radius: 20px;
+}
+
+.scorekeeper {
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    justify-content: center;
+    margin: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+/*-----------Responsiveness----------*/
+@media (max-width: 768px) {
+
+    body {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .container {
+        width: 85%;
+        margin-left: -2%;
+    }
+    .Btn {
+        font-size: 1.3em;
+        width: 45%;
+    }
+    .questionText {
+        font-size: 2em;
+    }
+    #qtnNumRecorder {
+        font-size: 1.3em;
+        top: 11%;
+        left: 9%;
+    }
+    .contrl {
+        padding: 10px;
+        width: 50%;
+        margin-left: 160px;
+        font-size: 2em;
+    }
+    .scorekeeper {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: rgba(5, 5, 250, 0.5);
+    }
+    .container {
+        width: 85%;
+        margin-left: -3%;
+    }
+    .Btn {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    .questionText {
+        font-size: 1.5em;
+    }
+    #qtnNumRecorder {
+        font-size: 1.3em;
+        top: 10%;
+        left: 7%;
+    }
+    .contrl {
+        padding: 10px;
+        width: 50%;
+        margin-left: 120px;
+        font-size: 2em;
+    }
+    .scorekeeper {
+        font-size: 2em;
+    }
+    .newGame {
+        margin-left: 25%;
+    }
+    .next-btn {
+        margin-left: 25%;
+    }
+
+ 
+}
+
+@media (max-width: 400px) {
+
+    body {
+        background-color: rgba(2, 2, 61, 0.6);
+        margin: -15px;
+        padding: 5px;
+    }
+    .contrl {
+        padding: 10px;
+        width: 180px;
+        margin-left: 50px;
+    }
+    .container {
+        background-color: white;
+        width: 80%;
+        margin-left: -5px;
+        top: 10%;
+    }
+    .Btn {
+        font-size: 1.2em;
+        width: 100%;
+    }
+    .questionText {
+        font-size: 1.2em;
+    }
+    #qtnNumRecorder {
+        font-size: 1.3em;
+        left: 10%;
+        top: 5%;
+    }
+    .scorekeeper {
+        font-size: 1.3em;
+    }
+    .quitGame {
+        font-weight: bolder;
+        width: 60%;
+        padding: 10px;
+    }
+    .newGame {
+        margin-left: 10%;
+    }
+    .next-btn {
+        margin-left: 15%;
+    }
+}
